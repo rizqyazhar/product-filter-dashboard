@@ -6,5 +6,86 @@
     <title>Product Filter Dashboard</title>
     <link href="/src/styles.css" rel="stylesheet" />
   </head>
-  <body></body>
+  <body class="p-4 md:p-6 lg:p-8 bg-blue-100 font-sans">
+    <header>
+      <div
+        id="header-container"
+        class="max-6xl mx-auto px-4 md:px-6 lg:px-8 py-4 bg-blue-50 flex justify-between items-center rounded-t-xl ring ring-blue-500/10">
+        <div class="flex items-center gap-2">
+          <div class="w-fit p-2 bg-blue-500 rounded-xl">
+            <svg
+              class="size-4 stroke-white"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-handbag-icon lucide-handbag">
+              <path
+                d="M2.048 18.566A2 2 0 0 0 4 21h16a2 2 0 0 0 1.952-2.434l-2-9A2 2 0 0 0 18 8H6a2 2 0 0 0-1.952 1.566z" />
+              <path d="M8 11V6a4 4 0 0 1 8 0v5" />
+            </svg>
+          </div>
+          <h1 class="text-sm md:text-base lg:text-lg font-medium">ShopMate</h1>
+        </div>
+        <div class="flex items-center gap-3">
+          <svg
+            id="moon-icon"
+            class="size-4 md:size-6"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-moon-icon lucide-moon">
+            <path
+              d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" />
+          </svg>
+          <svg
+            id="sun-icon"
+            class="hidden size-4 md:size-6"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-sun-icon lucide-sun">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2" />
+            <path d="M12 20v2" />
+            <path d="m4.93 4.93 1.41 1.41" />
+            <path d="m17.66 17.66 1.41 1.41" />
+            <path d="M2 12h2" />
+            <path d="M20 12h2" />
+            <path d="m6.34 17.66-1.41 1.41" />
+            <path d="m19.07 4.93-1.41 1.41" />
+          </svg>
+          <p id="toggle-text" class="hidden md:block text-xs lg:text-sm">
+            Dark Mode
+          </p>
+          <div
+            id="toggle-box"
+            class="relative w-12 h-6 md:w-14 md:h-7 lg:w-16 lg:h-8 px-1 py-2 flex items-center bg-blue-100 shadow-sm rounded-full cursor-pointer">
+            <div
+              id="toggle-circle"
+              class="absolute size-5 md:size-6 lg:size-7 bg-white rounded-full duration-500 transition-all"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <script src="/app.js"></script>
+  </body>
 </html>
